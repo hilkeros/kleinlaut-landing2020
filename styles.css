@@ -1,0 +1,18 @@
+body {
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+}
+
+#logo {
+	max-width: 30vw;
+	margin-top: 50px;
+}
+
+.moto {
+	margin-top: 50px;
+}
+
+.socials img {
+	max-height: 30px;
+	padding: 5px;
+}
