@@ -1,0 +1,531 @@
+/*
+Everything
+*/
+
+@font-face {
+    font-family: Roboto;
+    src: url("fonts/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url("fonts/Roboto-Bold.ttf");
+}
+
+body {
+    background: #fbfcfd;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #fbfcfd;
+}
+
+a {
+    text-decoration: none;
+    color: #250021;
+}
+
+h1 {
+    font-family: Roboto-Bold, Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 20px;
+    color: #fcffec;
+}
+
+#HomeHansli {
+    position: fixed;
+    width: 30px;
+    right: 10%;
+    top: -30px;
+}
+
+.MarginTextBox {
+    margin: 23px 0;
+}
+
+.MainWrapper {
+    padding-bottom: 20%;
+}
+
+#FestivalHome img {
+    width: 20%;
+}
+
+#HelfenHome img {
+    width: 20%;
+}
+
+#ProgrammHome img {
+    width: 20%;
+}
+
+#WirHome img {
+    width: 20%;
+}
+
+.PageNav {
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    background: #fbfcfd;
+}
+
+@media screen and (min-width: 770px) {
+    .PageNav * {
+        display: block;
+    }
+    .PageNav {
+        top: 20%;
+        width: 6%;
+        position: fixed;
+        display: block;
+        background: none;
+        z-index: 0;
+    }
+    .MainWrapper {
+        margin: 0% auto;
+        width: 90%;
+        padding-bottom: 0;
+        padding-left: 70px;
+    }
+    .Left {
+        width: 45%;
+        margin-right: 5%;
+        display: inline-block;
+        vertical-align: top;
+        text-align: left;
+    }
+    .Right {
+        width: 45%;
+        margin-left: 4%;
+        display: inline-block;
+        vertical-align: top;
+        text-align: left;
+    }
+    #FestivalHome img {
+        width: 100%;
+    }
+    #HelfenHome img {
+        width: 100%;
+    }
+    #ProgrammHome img {
+        width: 100%;
+    }
+    #WirHome img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .MainWrapper {
+        margin: 0% auto;
+        width: 80%;
+        padding-left: 0px;
+    }
+}
+
+
+/*
+HomePage
+*/
+
+#HomeLogo {
+    position: relative;
+    top: -10px;
+}
+
+#HomeLogo * {
+    color: black;
+    font-size: 10px;
+    display: inline-block;
+    width: 48%;
+    top: 0;
+}
+
+#HomeLogo div {
+    text-align: center;
+    position: relative;
+    top: -10px;
+}
+
+#HomeLogo div div {
+    width: 100%;
+    display: block;
+}
+
+#HomeLogo div div img {
+    display: inline;
+    width: 49%;
+}
+
+#LogoWrapper {
+    position: relative;
+    margin=auto;
+    padding-bottom: 19%;
+}
+
+#Logo {
+    width: 100%;
+}
+
+#FB img {
+    position: absolute;
+    left: 20%;
+    top: 82%;
+    width: 5%;
+}
+
+#YT img {
+    position: absolute;
+    left: 73%;
+    top: 82%;
+    width: 7%;
+}
+
+#IG img {
+    position: absolute;
+    visibility: hidden;
+    left: 20%;
+    top: 110%;
+    top: 85%;
+    width: 7%;
+}
+
+#SC img {
+    position: absolute;
+    visibility: hidden;
+    left: 85%;
+    top: 85%;
+    width: 12%;
+}
+
+#Hansli {
+    position: absolute;
+    left: 46%;
+    top: 70%;
+    width: 9%;
+}
+
+#NewsContentWrapper {
+    position: relative;
+    text-align: center;
+}
+
+#NewsContent {
+    color: #250021;
+    width: 80%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+
+#NewsContent * {
+    color: #250021;
+}
+
+.NewsNav {
+    margin: 1.5%;
+    cursor: pointer;
+    font-size: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.HomeNav {
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    background: #fbfcfd;
+}
+
+@media screen and (min-width: 770px) {
+    #HomeLogo * {
+        color: black;
+        font-size: 10px;
+        display: inline-block;
+        width: 24%;
+        top: 0;
+    }
+    #HomeLogo div {
+        text-align: center;
+        position: relative;
+        top: -10px;
+    }
+    .HomeNav {
+        position: inherit;
+    }
+    .HomeNav #ProgrammHome img {
+        width: 20%;
+    }
+    .HomeNav #FestivalHome img {
+        width: 20%;
+    }
+    .HomeNav #HelfenHome img {
+        width: 20%;
+    }
+    .HomeNav #WirHome img {
+        width: 20%;
+    }
+    #HomeWrapper {
+        text-align: center;
+    }
+    #LogoWrapper {
+        width: 49%;
+        padding-bottom: 10%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    #NewsWrapper {
+        width: 50%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    #HomeLogo * {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    #HomeWrapper {
+        text-align: center;
+        margin-bottom: -2%;
+    }
+    #LogoWrapper {
+        width: 40%;
+        padding-bottom: 10%;
+        margin-right: 5%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    #NewsWrapper {
+        width: 40%;
+        margin-left: 5%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    #HomeLogo * {
+        font-size: 25px;
+    }
+}
+
+
+/*
+Programm
+*/
+
+#FreitagWrapper img {
+    width: 100%;
+}
+
+#Freitag {
+    padding: 2%;
+    margin-bottom: 1%;
+    background: #ea584e;
+}
+
+#Freitag p {
+    display: inline;
+    color: #250021;
+}
+
+#Freitag h2 {
+    display: inline;
+}
+
+#SamstagWrapper img {
+    width: 100%;
+}
+
+#Samstag {
+    padding: 2%;
+    margin-bottom: 1%;
+    background: #e6333c;
+}
+
+#Samstag p {
+    display: inline;
+    color: #250021;
+}
+
+#Samstag h2 {
+    display: inline;
+}
+
+#ProgrammTitel {
+    margin: 2%;
+    color: #ea584e;
+}
+
+#ProgrammWrapper h2 {
+    display: inline;
+}
+
+#ProgrammContentWrapper {
+    padding: 2%;
+}
+
+#ProgrammContentWrapper p {
+    color: #250021;
+}
+
+#ProgrammContentWrapper h2 {
+    color: #e6333c;
+}
+
+#RahmenWrapper img {
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+#Rahmen {
+    padding: 2%;
+    background: #e6333c;
+}
+
+#Rahmen p {
+    display: inline;
+    color: #250021;
+}
+
+#Rahmen h2 {
+    display: inline;
+}
+
+
+/*
+Festival
+*/
+
+#FestivalTitel {
+    margin: 2%;
+    color: #40b8b7;
+}
+
+.Hellblau {
+    padding: 2%;
+    background: #40b8b7;
+    margin-bottom: 2%;
+}
+
+.Dunkelblau {
+    padding: 2%;
+    background: #005a7c;
+    margin-bottom: 2%;
+}
+
+#FestivalWrapper img {
+    width: 100%;
+}
+
+#FestivalWrapper {
+    z-index: 5
+}
+
+
+/*
+Wir
+*/
+
+#WirTitel {
+    margin: 2%;
+    color: #f3d136;
+}
+
+.Hellgelb {
+    padding: 2%;
+    background: #f3d136;
+    margin-bottom: 2%;
+}
+
+.Hellgelb * {
+    color: black;
+}
+
+.Dunkelgelb {
+    padding: 2%;
+    background: #e6a135;
+    margin-bottom: 2%;
+}
+
+#WirWrapper img {
+    width: 100%;
+}
+
+#WirWrapper {
+    z-index: 5
+}
+
+
+/*
+Helfen
+*/
+
+#HelfenTitel {
+    margin: 2%;
+    color: #89c165;
+}
+
+.Hellgruen {
+    padding: 2%;
+    background: #89c165;
+    margin: 1% 0;
+}
+
+.Hellgruen * {
+    color: black;
+}
+
+.Dunkelgruen {
+    padding: 2%;
+    background: #54a67f;
+    margin: 1% 0;
+}
+
+#HelfenWrapper * img {
+    width: 100%;
+}
+
+#HelfenWrapper a {
+    color: black;
+}
+
+#HelfenWrapper {
+    z-index: 5
+}
+
+#AlleGoenner {
+    position: absolute;
+    -webkit-column-count: 1;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 1;
+    /* Firefox */
+    column-count: 1;
+    top: 25%;
+    left: -130%;
+    width: 80%;
+    box-shadow: -10px 10px 5px black;
+    padding: 2%;
+    background: #89c165;
+    transition: all 0.3s;
+}
+
+#AlleGoenner h4 {
+    display: inline;
+}
+
+@media screen and (min-width: 770px) {
+    #AlleGoenner {
+        -webkit-column-count: 3;
+        /* Chrome, Safari, Opera */
+        -moz-column-count: 3;
+        /* Firefox */
+        column-count: 3;
+    }
+    #SponsorWrapper a img {
+        display: inline-block;
+        width: 24%;
+        margin: 2.5%;
+    }
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <title>kleinLaut Festival | Programm</title>
+</head>
+    
+<body>
+    <div class="MainWrapper">
+        <div id="ProgrammWrapper">
+            <h1 id="ProgrammTitel">Programm</h1>
+            <a id="HomeHansli" href="index.html"><img src="svg/2_Kafer_Home/Hansli.svg" alt=""></a>
+            <div class="Left">
+                <div class="MarginTextBox">
+                    <div id="FreitagWrapper">
+                        <div id="Freitag">
+                            <h3>kleinLaut 2017 - Freitag</h3>
+                            <p>18:45 - 19:30</p>
+                            <a href="#ProgrammContentWrapper" onclick="loadBandX()"><h2>MC KORALLE</h2> (CH)</a>
+                            <br>
+                            <p>20:00 - 20:45</p>
+                            <a href="#ProgrammContentWrapper" onclick="loadALXS()"><h2>ALL XS</h2> (CH) </a>
+                            <br>
+                            <p>21:15 - 22:15</p>
+                            <a href="#ProgrammContentWrapper" onclick="loadThePeacocks()"><h2>THE PEACOCKS</h2> (CH)</a>
+                            <br>
+                            <p>22:45 - 23:45</p>
+                            <a href="#ProgrammContentWrapper" onclick="loadOneSentence()"><h2>ONE SENTENCE.SUPERVISOR</h2> (CH)</a>
+                            <br>
+                            <p>00:15 - 01:15</p>
+                            <a href="#ProgrammContentWrapper" onclick="loadGaia()"><h2>GAIA</h2> (CH)</a>
+                            <br>
+                            <p>01:30 - 04:00</p>
+                            <a href="#ProgrammContentWrapper" onclick="loadLostInNature()"><h2>LOST IN NATURE ALLSTARS</h2> (CH)</a>
+                            <br>
+                      
+                        </div>
+                        <img src="svg/5_deko_elemente/2_Programm/programm_deko.svg" alt="">
+                    </div>
+                    <br>
+                    
+                    </div>
+                    <div id="SamstagWrapper">
+                        <div id="Samstag">
+                            <h3>kleinLaut 2017 - Samstag</h3>
+                            <p>16:00 - 16:45</p>
+                            <a href="#ProgrammContentWrapper" onclick="loadSteiner()"><h2>STEINER & MADLAINA</h2> (CH)</a>
+                            <br>
+                            <p>17:15 - 18:15</p>
+                            <a href="#ProgrammContentWrapper" onclick="loadHowlongWolf()"><h2>HOWLONG WOLF</h2> (CH)</a>
+                            <br>
+                            <p>18:45 - 20:00</p>
+                            <a href="#ProgrammContentWrapper" onclick="loadWinstonFrancis()"><h2>WINSTON FRANCIS LS. RUDE RICH & THE HIGH NOTES</h2> (JAM/NL)</a>
+                            <br>
+                            <p>20:30 - 21:30</p>
+                            <a href="#ProgrammContentWrapper" onclick="loadPhoria()"><h2>PHORIA</h2> (UK)</a>
+                            <br>
+                            <p>22:15 - 23:15</p>
+                            <a href="#ProgrammContentWrapper" onclick="loadFuguMango()"><h2>FùGù MANGO</h2> (BE) </a>
+                            <br>
+                            <p>23:45 - 00:45</p>
+                            <a href="#ProgrammContentWrapper" onclick="loadAstronautalis()"><h2>ASTRONAUTALIS</h2> (US)</a> 
+                            <br>
+                            <p>01:25 - 02:15</p>
+                            <a href="#ProgrammContentWrapper" onclick="loadMutiny()"><h2>MUTINY ON THE BOUNTY</h2> (LUX)</a>
+                            <br>
+                            <p>02:30 - 04:00</p>
+                            <a href="#ProgrammContentWrapper" onclick="loadFMCh()"><h2>FMCH</h2> (CH)</a>
+                            <br>
+                      
+                        </div>
+                
+                        <img src="svg/5_deko_elemente/2_Programm/programm_deko.svg" alt="">
+                    </div>
+                <br>
+                
+
+            </div>
+
+
+            <div class="Right">
+                <div class="MarginTextBox">
+                    <div id="ProgrammContentWrapper">
+                        <h2>kleinLaut 2017</h2>
+                        <p>Das Musikprogramm für das diesjährige kleinLaut Programm ist komplett! Erfahre mehr über die einzelnen Acts, in dem du auf den Bandnamen klickst. Das Rahmenprogramm folgt in den nächsten Wochen.</p>
+                    </div>
+
+                </div>
+
+                
+                            
+                            <br>
+                        </div>
+                    </div>
+                </div>
+
+
+    <nav class="PageNav">
+        <a id="ProgrammHome" href="programm.html"><img src="svg/2_Kafer_Home/Kafer_Programm_Home.svg" alt=""></a>
+        <a id="FestivalHome" href="festival.html"><img src="svg/2_Kafer_Home/Kafer_Festival_Home.svg" alt=""></a>
+        <a id="HelfenHome" href="helfen.html"><img src="svg/2_Kafer_Home/Kafer_Helfen_Home.svg" alt=""></a>
+        <a id="WirHome" href="wir.html"><img src="svg/2_Kafer_Home/Kafer_um_uns_Home.svg" alt=""></a>
+    </nav>
+
+    <script>
+        var Programm = document.getElementById("ProgrammContentWrapper");
+         {
+          function loadBandX() {
+            Programm.innerHTML = "<p>FREITAG 28.07.17 // 18:45-19:30</p> <h2> MC KORALLE (CH) </h2> <p> HIP HOP </p><p><a href='https://www.facebook.com/MCKoralle/?ref=br_rs' target='blank'><img src='img/facebook.png' style='margin-right:5px'></a></p> <p>MC Koralle überzeugten das kleinLaut Team am BandXAargau Finale mit frischem Hip Hop. Sie werden deshalb mit smoothen Beats und Lines das Festival am Freitag eröffnen!</p>"; }
+            function loadALXS() {
+            Programm.innerHTML = "<p>FREITAG 28.07.17 // 20:00-20:45</p> <h2> ALL XS (CH) </h2> <p> ELECTRO POP</p><p><a href='https://www.facebook.com/allxsunited/?ref=br_rs' target='blank'><img src='img/facebook.png' style='margin-right:5px'></a><a href='https://soundcloud.com/ohsisterrecords/sets/soma-fortuna-united-lp' target='blank'><img src='img/soundcloud.png' style='margin-right:5px'></a></p> <p>Synthie Pop, British House und Minimal Electro, das ist die Indie-Supergroup All XS, angereist direkt aus... Bern. Beweis, dass die Schweizer Musikszene frisch und immer wieder neu ist und richtig viel zu bieten hat. </p><br><br><p><iframe width='66%' height='290' src='https://www.youtube.com/embed/M45sfvi99X0' frameborder='0' allowfullscreen></iframe></p>"; }
+            function loadThePeacocks() {
+            Programm.innerHTML = "<p>FREITAG 28.07.17 // 21:15-22:15</p> <h2> THE PEACOCKS (CH) </h2> <p> ROCKSTEADY </p><p><a href='	www.thepeacocks.ch/' target='blank' style='margin-right:5px'><img src='img/www.png'></a><a href='https://www.facebook.com/thepeacocksofficial/?ref=ts&fref=ts' target='blank'><img src='img/facebook.png' style='margin-right:5px'></a></p><p>Auf der Bühne steht die Band aus Winterthur bereits seit 1990 und das merkt man: The Peacocks servieren wilden Punk-Rocka-Psychobilly und fühlen sich sehr wohl dabei. </p><br><br><p><iframe width='66%' height='290' src='https://www.youtube.com/embed/ptY-e_F3_ps' frameborder='0' allowfullscreen></iframe></p>"; }
+            function loadOneSentence() {
+            Programm.innerHTML = "<p>FREITAG 28.07.17 // 22:45-23:45</p> <h2> ONE SENTENCE.SUPERVISOR (CH) </h2> <p> KRAUT ROCK </p><p><a href='http://www.onesentencesupervisor.ch/' target='blank' style='margin-right:5px'><img src='img/www.png'></a><a href='https://www.facebook.com/onesentencesupervisor/?fref=ts' target='blank'><img src='img/facebook.png' style='margin-right:5px'></a><a href='https://soundcloud.com/one-sentence-supervisor' target='blank'><img src='img/soundcloud.png' style='margin-right:5px'></a></p><p>One Sentence. Supervisor - besser als jede Droge. Die vier Badener mischen Krautrock, New Wave und Psychedelica und haben damit den IndieSuisse-Award \"Album of the Year 2016\" abgeräumt.</p><br><br><p><iframe width='66%' height='290' src='https://www.youtube.com/embed/FRPqxnc063c' frameborder='0' allowfullscreen></iframe></p>"; }
+            function loadGaia() {
+            Programm.innerHTML = "<p>FREITAG 28.07.17 // 00:15-01:15</p> <h2> GAIA (CH) </h2> <p> ELECTRO </p><p><a href='	http://www.gaiaband.ch/' target='blank' style='margin-right:5px'><img src='img/www.png'></a><a href='https://www.facebook.com/gaialuzern/?fref=ts' target='blank'><img src='img/facebook.png' style='margin-right:5px'></a><a href='https://soundcloud.com/gaia-5' target='blank'><img src='img/soundcloud.png' style='margin-right:5px'></a></p><p>Elektronische Clubmusik gespielt mit Liveinstrumenten, so steckt sich die Luzerner Gruppe GAIA ihr musikalisches Feld ab. Mit ihrer neuen EP Howl wollen sie nun die Schweiz erobern. </p><br><br><p><iframe width='66%' height='290' src='https://www.youtube.com/embed/uNT6cGDs9E4' frameborder='0' allowfullscreen></iframe></p>"; }
+            function loadLostInNature() {
+            Programm.innerHTML = "<p>FREITAG 28.07.17 // 01:30-04:00</p> <h2> LOST IN NATURE ALLSTARS (CH) </h2> <p> ELECTRO </p><p></p> <p>Das Drum'n'Bass-DJ-Set der LOST IN NATURE-Fraktion wiederholt sich und bekommt Traditionsstatus. </p><br><br>"; }
+            function loadSteiner() {
+            Programm.innerHTML = "<p>SAMSTAG 29.07.17 // 16:00-16:45</p> <h2> STEINER & MADLAINA (CH) </h2> <p> POP / SINGERSONGWRITER </p><p><a href='https://www.facebook.com/gaialuzern/?fref=ts' target='blank'><img src='img/facebook.png' style='margin-right:5px'></a><a href='https://soundcloud.com/steinermadlaina' target='blank'><img src='img/soundcloud.png' style='margin-right:5px'></a></p> <p>Steiner & Madlaina - zwei junge Frauen, zwei Stimmen, zwei Instrumente. Zusammen produzieren die Singer-Songwriterinnen Folk / Pop, made in Zürich. </p><br><br><p><iframe width='66%' height='290' src='https://www.youtube.com/embed/144nzUR2aEc' frameborder='0' allowfullscreen></iframe></p>"; }
+            function loadHowlongWolf() {
+            Programm.innerHTML = "<p>SAMSTAG 29.07.17 // 17:15-18:15</p> <h2> HOWLONG WOLF (CH) </h2> <p> INDIE </p><p><a href='	http://www.howlongwolf.com/' target='blank' style='margin-right:5px'><img src='img/www.png'></a><a href='https://www.facebook.com/howlongwolf/?fref=ts' target='blank'><img src='img/facebook.png' style='margin-right:5px'></a><a href='https://soundcloud.com/howlong-wolf' target='blank'><img src='img/soundcloud.png' style='margin-right:5px'></a></p><p>Als zweite Band aus Winterthur bringen Howlong Wolf psychedelischen Folk/Country nach Riniken.</p><br><br><p><iframe width='66%' height='290' src='https://www.youtube.com/embed/sgKHZAeHKfA' frameborder='0' allowfullscreen></iframe></p>"; }
+            function loadWinstonFrancis() {
+            Programm.innerHTML = "<p>SAMSTAG 29.07.17 // 18:45-20:00</p> <h2> WINSTON FRANCIS (JAM) LS. RUDE RICH & THE HIGH NOTES (NL) </h2> <p> REGGAE </p><p><a href='https://www.facebook.com/1winstonfrancis/' target='blank'><img src='img/facebook.png' style='margin-right:5px'></a><a href='https://soundcloud.com/winston-francis-official' target='blank'><img src='img/soundcloud.png' style='margin-right:5px'></a></p> <p>Kein kleinlaut Festival ohne Reggae: dieses Jahr beehrt uns Winston „Mr. Fix-it“ Francis aus Jamaica mit Rude Rich & The High Notes aus den Niederlanden. </p><br><p><iframe width='66%' height='290' src='https://www.youtube.com/embed/oZusw8KsGdQ' frameborder='0' allowfullscreen></iframe></p>"; }
+            function loadPhoria() {
+            Programm.innerHTML = "<p>SAMSTAG 29.07.17 // 20:30-21:30</p> <h2> PHORIA (UK) </h2> <p> ELECTRONIC </p><p><a href='	http://phoriamusic.com/' target='blank' style='margin-right:5px'><img src='img/www.png'></a><a href='https://www.facebook.com/phoriamusic/?fref=ts' target='blank'><img src='img/facebook.png' style='margin-right:5px'></a><a href='https://soundcloud.com/phoriamusic' target='blank'><img src='img/soundcloud.png' style='margin-right:5px'></a></p><p>Treibend, verträumt und experimentell: die britische Band Phoria kreiert feinen Electropop, welchem man sich nicht entziehen kann.</p><br><br><p><iframe width='66%' height='290' src='https://www.youtube.com/embed/JtimyzJYUgc' frameborder='0' allowfullscreen></iframe></p>"; }
+            function loadFuguMango() {
+            Programm.innerHTML = "<p>SAMSTAG 29.07.17 // 22:15-23:15</p> <h2> FùGù MANGO (BE) </h2> <p> POP </p><p><a href='https://www.facebook.com/fugumango/?fref=ts' target='blank'><img src='img/facebook.png' style='margin-right:5px'></a><a href='https://soundcloud.com/f-g-mango' target='blank'><img src='img/soundcloud.png' style='margin-right:5px'></a></p><p>Die belgische Band FùGù Mango serviert feinen tropical-Indie-Pop-Rock. Bereits bei den ersten afrikanischen Rhythmen wird die vorderste, die zweite und auch die hinterletzte Reihe tanzen. </p><br><br><p><iframe width='66%' height='290' src='https://www.youtube.com/embed/dg4LXAUDu1g' frameborder='0' allowfullscreen></iframe></p>"; }
+            function loadAstronautalis() {
+            Programm.innerHTML = "<p>SAMSTAG 29.07.17 // 23:45-00:45</p> <h2> AUSTRONAUTALIS (USA) </h2> <p> HIP HOP </p><p><a href='http://www.astronautalis.com' target='blank' style='margin-right:5px'><img src='img/www.png'></a><a href='https://www.facebook.com/fugumango/?fref=ts' target='blank'><img src='img/facebook.png' style='margin-right:5px'></a><a href='https://soundcloud.com/astronautalis' target='blank'><img src='img/soundcloud.png' style='margin-right:5px'></a></p><p>Der amerikanische HipHop-Künstler Astronautalis weiss mit Witz, Charme und gesellschaftskritischen Texten zu begeistern und bringt eine geballte Ladung Rap ans kleinLaut Festival. </p><br><br><p><iframe width='66%' height='290' src='https://www.youtube.com/embed/VAgOy5x-M78' frameborder='0' allowfullscreen></iframe></p>"; }
+
+            function loadMutiny() {
+            Programm.innerHTML = "<p>SAMSTAG 29.07.17 // 01:25-02:15</p> <h2> MUTINY ON THE BOUNTY (LUX) </h2> <p> MATH ROCK </p><p><a href='https://www.motb.net/' target='blank' style='margin-right:5px'><img src='img/www.png'></a><a href='https://www.facebook.com/mutinyonthebountytheband/?fref=ts' target='blank'><img src='img/facebook.png' style='margin-right:5px'></a><a href='https://soundcloud.com/user4309959' target='blank'><img src='img/soundcloud.png' style='margin-right:5px'></a></p> <p>Mutiny on the Bounty sind hektisch und gleichzeitig melodieverliebt. Die Luxemburger Band weiss, wie man mit Gitarren Wirbelstürme erzeugt.</p><br><br><p><iframe width='66%' height='290' src='https://www.youtube.com/embed/jOgA72fLptM' frameborder='0' allowfullscreen></iframe></p>"; }
+            function loadFMCh() {
+            Programm.innerHTML = "<p>SAMSTAG 29.07.17 // 02:30-04:00</p> <h2> FMCH (CH) </h2> <p> DJ </p><p>FM und CH aus CH sind FMCH und legen Samstagnacht als Trackselector Disco Tracks auf. </p><br><br>"; }
+             navProgramm.click();
+        }
+    </script>
+</body>
+
+</html>

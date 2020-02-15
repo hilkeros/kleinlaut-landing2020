@@ -1,0 +1,758 @@
+@font-face {
+    font-family: Roboto;
+    src: url("fonts/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url("fonts/Roboto-Bold.ttf");
+}
+
+.WeissFont{
+    color: #fcffec;
+}
+
+body {
+    background: #fbfcfd;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size:2.5vh;
+    color: #250021;
+}
+
+a {
+    text-decoration: bold;
+    color:#250021;
+}
+
+h1 {
+    font-family: Roboto-Bold, Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    display: inline-block;
+    font-size: 3vh;
+}
+
+#NewsContent > h2{
+    display: inline-block;
+    color: #fcffec;
+    background-color: #25B3C4;
+}
+
+#Freitag>*>p{
+    font-size: 1.5vh;
+}
+
+#Freitag>h3{
+    display: inline-block;
+    color: #250021;
+    background-color: #FBE27C;
+}
+
+#Freitag>.ProgramPoint:nth-child(2n+0)>* {
+    color: #fcffec;
+    background-color: #E74158;
+}
+
+#Freitag>.ProgramPoint:nth-child(2n+1)>* {
+    color: #250021;
+    background: #FBE27C;
+}
+
+#Samstag>*>p{
+    font-size: 1.5vh;
+}
+
+#Samstag>h3{
+    display: inline-block;
+    color: #250021;
+    background: #FBE27C;
+}
+
+#Samstag>.ProgramPoint:nth-child(2n+0)>* {
+    color: #fcffec;
+    background: #25B3C4;
+}
+
+#Samstag>.ProgramPoint:nth-child(2n+1)>* {
+    color: #250021;
+    background: #FBE27C;
+}
+
+#KanalK>*>p{
+    font-size: 1vh;
+}
+
+#KanalK>h3{
+    display: inline-block;
+    color: #250021;
+    background: #FBE27C;
+}
+
+#KanalK>.ProgramPoint:nth-child(2n+0)>* {
+    color: #fcffec;
+    background: #25B3C4;
+}
+
+#KanalK>.ProgramPoint:nth-child(2n+1)>* {
+    color: #250021;
+    background: #FBE27C;
+}
+
+
+#Rahmen>*>p{
+    font-size: 1.5vh;
+}
+
+#Rahmen>h3{
+    display: inline-block;
+    color: #250021;
+    background-color: #FBE27C;
+}
+
+#Rahmen>.ProgramPoint:nth-child(2n+0)>* {
+    color: #fcffec;
+    background-color: #E74158;
+}
+
+#Rahmen>.ProgramPoint:nth-child(2n+1)>* {
+    color: #250021;
+    background: #FBE27C;
+}
+
+.GönnerPoint >p{
+    color: #250021;
+    background: #FBE27C;
+    display: inline-block;
+}
+
+.GönnerPoint >h4{
+    color: #fcffec;
+    background: #25B3C4;
+    display: inline-block;
+}
+
+#HomeWrapper{
+    margin-bottom: 20vw;
+    text-align: center;
+}
+
+#TitleHomeWrapper{
+    margin-bottom: 20vw;
+    text-align: center;
+}
+
+#Home{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    width: 15vw;
+    height: 15vw;
+    background:url(svg/kl_logo_oben_links.svg); 
+    background-size:100% 100%;
+    margin: 0;
+    z-index: 10;
+}
+
+#ProgrammHome{
+    display: inline-block;
+    width: 15vw;
+    height: 15vw;
+    background:url(svg/Button_Programm.svg); 
+    background-size:100% 100%;
+    margin: 0 3vw 0 3vw;
+    z-index: 10;
+}
+
+#FestivalHome{
+    display: inline-block;
+    width: 15vw;
+    height: 15vw;
+    background:url(svg/Button_Festival.svg); 
+    background-size:100% 100%;
+    margin: 0 3vw 0 3vw;
+    z-index: 10;
+}
+
+#HelfenHome{
+    display: inline-block;
+    width: 15vw;
+    height: 15vw;
+    background:url(svg/Button_Helfen.svg); 
+    background-size:100% 100%;
+    margin: 0 3vw 0 3vw;
+    z-index: 10;
+}
+
+#WirHome{
+    display: inline-block;
+    width: 15vw;
+    height: 15vw;
+    background:url(svg/Button_Uns.svg); 
+    background-size:100% 100%;
+    margin: 0 3vw 0 3vw;
+    z-index: 10;
+}
+
+.HomeNav {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.PageNav{
+    text-align: center;
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+}
+
+#LogoWrapper{
+    display: inline-block;
+    width: 90vw;
+    height: 90vw;
+    background:url(svg/Home_Logo.svg); 
+    background-size:100% 100%;
+}
+
+#NewsWrapper{
+    display: inline-block;
+    width: 90vw;
+    background:url(svg/News_Box_1.svg); 
+    background-size:100% 100%;
+}
+
+#NewsContent{
+    width: 50vw;
+    background-color: #fbfcfd;
+    display: inline-block;
+    margin: 15vw 4vw 15vw 4vw;
+    padding: 2.5vh;
+    padding-top: 0; 
+    text-align: left;
+}
+
+.NewsNav {
+    position: absolute;
+    top:120vw;
+    margin-left: -1vw;
+    color: #fcffec;;
+    font-size: 6vh;
+    cursor: pointer;
+    display: inline-block;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#SponsorWrapper{
+    display: block;
+    margin: 10vw 0 10vw 0;
+}
+
+#Bewegung{
+    display: inline-block;
+    width: 25vw;
+    height: 10vw;
+    background:url(svg/Logo_BewRaeume.svg); 
+    background-size:100% 100%;
+}
+
+#Buono{
+    display: inline-block;
+    width: 25vw;
+    height: 10vw;
+    background:url(svg/Logo_Buono.svg); 
+    background-size:100% 100%;
+}
+
+#Bloesser{
+    display: inline-block;
+    width: 25vw;
+    height: 10vw;
+    background:url(svg/Logo_Bloesser.svg); 
+    background-size:100% 100%;
+}
+
+#Getrnkepartner{
+    display: inline-block;
+    width: 25vw;
+    height: 10vw;
+    background:url(svg/Logo_Getraenkepartner.svg); 
+    background-size:100% 100%;
+}
+
+#Bouillon{
+    display: inline-block;
+    width: 25vw;
+    height: 10vw;
+    background:url(svg/Logo_Bouillon.svg); 
+    background-size:100% 100%;
+}
+
+#Buono{
+    display: inline-block;
+    width: 25vw;
+    height: 10vw;
+    background:url(svg/Logo_Buono.svg); 
+    background-size:100% 100%;
+}
+
+#Kuratorium{
+    display: inline-block;
+    width: 25vw;
+    height: 10vw;
+    background:url(svg/Logo_Kuratorium.svg); 
+    background-size:100% 100%;
+}
+
+
+#Kanalk{
+    display: inline-block;
+    width: 25vw;
+    height: 10vw;
+    background:url(svg/Logo_KanalK.svg); 
+    background-size:100% 100%;
+}
+
+#Schreiner{
+    display: inline-block;
+    width: 25vw;
+    height: 10vw;
+    background:url(svg/Logo_Schreiner.svg); 
+    background-size:100% 100%;
+}
+
+#Schaepper{
+    display: inline-block;
+    width: 25vw;
+    height: 10vw;
+    background:url(svg/Logo_Schaepper.svg); 
+    background-size:100% 100%;
+}
+
+#Zentrum{
+    display: inline-block;
+    width: 25vw;
+    height: 10vw;
+    background:url(svg/Logo_Zentrum.svg); 
+    background-size:100% 100%;
+}
+
+#IBB{
+    display: inline-block;
+    width: 25vw;
+    height: 10vw;
+    background:url(svg/Logo_IBB.svg); 
+    background-size:100% 100%;
+}
+
+#Kosag{
+    display: inline-block;
+    width: 25vw;
+    height: 10vw;
+    background:url(svg/Logo_Kosag.svg); 
+    background-size:100% 100%;
+}
+
+
+
+#FreitagWrapper{
+    text-align: left;
+    background:url(svg/Content_Box_1.svg); 
+    background-size:100% 100%;
+    margin-bottom: 2vh;
+}
+
+#Freitag p {
+    display: inline;
+}
+
+#Freitag h2 {
+    display: inline;
+}
+
+#SamstagWrapper{
+    text-align: left;
+    background:url(svg/Content_Box_2.svg); 
+    background-size:100% 100%;
+    margin-bottom: 2vh;
+}
+
+#Samstag p {
+    display: inline;
+}
+
+#Samstag h2 {
+    display: inline;
+}
+
+#KanalKWrapper{
+    text-align: left;
+    background:url(svg/Content_Box_2.svg); 
+    background-size:100% 100%;
+    margin-bottom: 2vh;
+}
+
+#KanalK p {
+    display: inline;
+}
+
+#KanalK h2 {
+    display: inline;
+}
+
+#RahmenWrapper{
+    text-align: left;
+    background:url(svg/Content_Box_3.svg); 
+    background-size:100% 100%;
+    margin-bottom: 2vh;
+}
+
+#Rahmen p {
+    display: inline;
+}
+
+#Rahmen h2 {
+    display: inline;
+}
+
+.ContentBox1{
+    background:url(svg/Content_Box_1.svg); 
+    background-size:100% 100%;
+    margin-bottom: 2vh;
+}
+
+.ContentBox2{
+    background:url(svg/Content_Box_2.svg); 
+    background-size:100% 100%;
+    margin-bottom: 2vh;
+}
+
+.ContentBox3{
+    background:url(svg/Content_Box_3.svg); 
+    background-size:100% 100%;
+    margin-bottom: 2vh;
+}
+
+.ContentBox1 > .Content > p {
+    background-color: #FBE27C;
+}
+
+.ContentBox2 > .Content > p {
+    background-color: #25B3C4;
+}
+
+.ContentBox3 > .Content > p {
+    background-color: #FF7E5F;
+}
+
+.HellBlauBack{
+    background-color: #25B3C4;
+}
+
+.GelbBack{
+    background-color: #FBE27C;
+}
+
+.OrangeBack{
+    background-color: #FF7E5F;
+}
+
+.RotBack{
+    background-color: #E74158;
+}
+
+.ContentLeft{
+    text-align: left;
+}
+
+.Content{
+    padding: 2vh;
+}
+
+@media screen and (min-width: 500px) {
+    .PageNav{
+        position: fixed;
+        width: 10vh;
+        top: 0;
+    }
+
+    .PageNav *{
+        display: block;
+        margin: 0;
+        float: left;
+    }
+
+    #Home{
+        position: relative;
+        left: 0;
+        float: right;
+        width: 15vh;
+        height: 15vh;
+        margin: 0 0 1vh 0;
+    }
+
+    #ProgrammHome{
+        width: 10vh;
+        height: 10vh;
+        margin: 0 0 1vh 0;
+    }
+
+    #FestivalHome{
+        width: 10vh;
+        height: 10vh;
+        margin: 0 0 1vh 0;
+    }
+
+    #HelfenHome{
+        float: right;
+        width: 10vh;
+        height: 10vh;
+        margin: 0 0 1vh 0;
+    }
+
+    #WirHome{
+        float: right;
+        width: 10vh;
+        height: 10vh;
+        margin: 0 0 1vh 0;
+    }
+
+    .HomeNav > * > #ProgrammHome{
+        width: 22vh;
+        height: 22vh;
+        margin: 0 5vh 0 0;
+    }
+
+    .HomeNav > * > #FestivalHome{
+        width: 22vh;
+        height: 22vh;
+        margin: 0 0 0 5vh;
+    }
+
+    .HomeNav > * > #HelfenHome{
+        float: right;
+        width: 22vh;
+        height: 22vh;
+        margin: 0 6vh 0 0;
+    }
+
+    .HomeNav > * > #WirHome{
+        float: right;
+        width: 22vh;
+        height: 22vh;
+        margin: 0 0 0 5.2vh;
+    }
+
+    #HomeWrapper{
+        text-align: left;
+        margin: auto;
+        margin-top: 2vh;
+        margin-bottom: 0;
+    }
+
+    #AlleGoenner {
+        -webkit-column-count: 2;
+        /* Chrome, Safari, Opera */
+        -moz-column-count: 2;
+        /* Firefox */
+        column-count: 2;
+    }
+
+    .MainWrapper{
+        padding-left: 20vh;
+        margin: auto;
+        width: 71vw;
+    }
+
+    body {
+        font-size:1vw;
+    }
+
+    h2 {
+        font-size: 1.5vw;
+    }
+
+    .Left {
+        width: 60vw;
+        margin-right: 0;
+        display: inline-block;
+        vertical-align: top;
+        text-align: left;
+    }
+
+    .Right {
+        width: 60vw;
+        display: inline-block;
+        vertical-align: top;
+        text-align: left;
+    }
+
+    .FullWidth{
+        width: 60vw;
+    }
+
+    #TitleHomeWrapper{
+        text-align: left;
+        margin: auto;
+        margin-top: 2vh;
+        width: 120vh;
+    }
+    .HomeNav {
+        position: relative;
+        margin: 3vh 0 3vh 0;
+        bottom: 0;
+    }
+
+    #LogoWrapper{
+        display: inline-block;
+        width: 55vh;
+        height: 55vh;
+    }
+
+    #NewsWrapper{
+        background:url(svg/News_Box_2.svg); 
+        float: right;
+        width: 55vh;
+        height: 55vh;
+    }
+
+    #NewsContent{
+        background-color: transparent;
+        padding: 0;
+        width: 30vh;
+        height: 33vh;
+        display: inline-block;
+        margin: 10vh 0 0 12vh;
+    }
+
+    .NewsNav {
+        position: absolute;
+        margin: 5vh;
+        top: 20vh;
+    }
+
+    #SponsorWrapper{
+        margin: 0;
+    }
+
+    #Bewegung{
+        display: inline-block;
+        width: 18vh;
+        height: 4vh;
+        margin: 1vh 1vh 1vh 1vh;
+    }
+
+    #Buono{
+        display:flex;
+        width: 18vh;
+        height: 5vh;
+        margin: 1vh 1vh 1vh 1vh;
+    }
+    
+    #Bloesser{
+        display: inline-block;
+        width: 18vh;
+        height: 5vh;
+        margin: 1vh 1vh 1vh 1vh;
+    }
+    
+    #Getrnkepartner{
+        display: inline-block;
+        width: 18vh;
+        height: 6vh;
+        margin: 1vh 1vh 1vh 1vh;
+    }
+
+    #Bouillon{
+        display: inline-block;
+        width: 18vh;
+        height: 4vh;
+        margin: 1vh 1vh 1vh 1vh;
+    }
+
+    #Kuratorium{
+        display: inline-block;
+        width: 18vh;
+        height: 4vh;
+        margin: 1vh 1vh 1vh 0;
+    }
+    
+     #Kosag{
+        display: inline-block;
+        width: 18vh;
+        height: 4vh;
+        margin: 1vh 1vh 1vh 0;
+    }
+    
+    #IBB{
+        display: inline-block;
+        width: 18vh;
+        height: 4vh;
+        margin: 1vh 1vh 1vh 0;
+    }
+
+
+    #Kanalk{
+        display: inline-block;
+        width: 18vh;
+        height: 6vh;
+        margin: 1vh 1vh 1vh 1vh;
+    }
+    
+    #Schaepper{
+        display: inline-block;
+        width: 18vh;
+        height: 4vh;
+        margin: 1vh 1vh 1vh 0;
+    }
+
+    #Schreiner{
+        display: inline-block;
+        width: 18vh;
+        height: 4vh;
+        margin: 1vh 0 1vh 1vh;
+    }
+    
+    #Zentrum{
+        display: inline-block;
+        width: 18vh;
+        height: 5vh;
+        margin: 1vh 1vh 1vh 1vh;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #Home{
+        position: relative;
+        left: 0;
+        float: right;
+        width: 10vw;
+        height: 10vw;
+        margin: 0 0 1vh 0;
+    }
+
+    .MainWrapper{
+        padding-left: 15vw;
+    }
+
+
+    .Left {
+        width: 33vw;
+        margin-right: 4vw;
+    }
+
+    .Right {
+        width: 33vw;
+    }
+
+    .FullWidth{
+        width: 70vw;
+    }
+}

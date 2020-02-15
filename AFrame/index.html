@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <script src="aframe-v0.8.2.min.js"></script>
+    <script src="aframe-animation-component.min.js"></script>
+    <script src="aframe-travel-component.min.js"></script>
+    <script src="aframe-look-at-component.min.js"></script>
+    <meta charset="utf-8"/>
+  </head>
+  <body>
+    <a-scene background="color: #00C3D9">
+      <a-cursor raycaster="objects: .clickable" cursor="rayOrigin: mouse; fuseTimeout: 1" material="color: #00C3D9;"></a-cursor>
+      <a-entity camera look-controls></a-entity>
+      <a-assets>
+        <a-asset-item id="floor-obj" src="Kleinlaut5.obj"></a-asset-item>
+        <a-asset-item id="floor-mtl" src="Kleinlaut5.mtl"></a-asset-item>
+        <a-asset-item id="freitag-obj" src="Freitag.obj"></a-asset-item>
+        <a-asset-item id="freitag-mtl" src="Freitag.mtl"></a-asset-item>
+        <a-asset-item id="samstag-obj" src="Samstag.obj"></a-asset-item>
+        <a-asset-item id="samstag-mtl" src="Samstag.mtl"></a-asset-item>
+        <a-asset-item id="geil-obj" src="Geil.obj"></a-asset-item>
+        <a-asset-item id="geil-mtl" src="Geil.mtl"></a-asset-item>
+        <a-asset-item id="logo-obj" src="Logo.obj"></a-asset-item>
+        <a-asset-item id="logo-mtl" src="Logo.mtl"></a-asset-item>
+      </a-assets>
+
+      <!-- KleinLaut title -->
+      <a-entity position="-4 2 -4" align="center" look-at="[camera]"> 
+        <a-entity id="logo" class="clickable" position="-1.5 0 0" scale="2 2 2" obj-model="obj: #logo-obj; mtl: #logo-mtl"> </a-entity>
+      </a-entity>
+      <!-- Navigation -->
+      <a-entity position="4 2 -10"> 
+        <a-box id="node-move" opacity="0" class="clickable" position="0 -1 0" scale="5 5 5" travel-node="transition: move; animationDur: 2000; animationEasing: easeInOutElastic" ></a-box>
+        <a-entity look-at="[camera]" position="0 0 -2">
+          <a-entity scale="3 3 3" position="-1 0 -1"  obj-model="obj: #freitag-obj; mtl: #freitag-mtl"></a-entity>
+        </a-entity>
+      </a-entity>
+      <a-entity position="-8.5 2 -4.5" > 
+        <a-box id="node-move" opacity="0" class="clickable" position="0 -1 0" scale="5 5 5" travel-node="transition: move; animationDur: 2000; animationEasing: easeInOutElastic" ></a-box>
+        <a-entity look-at="[camera]" position="-2 0 0">
+          <a-entity position="-1 0 0" scale="3 3 3" obj-model="obj: #geil-obj; mtl: #geil-mtl"></a-entity>
+        </a-entity>
+      </a-entity>
+      <a-entity position="-1 2 4">
+        <a-box id="node-move" opacity="0" class="clickable" position="0 -1 0" scale="5 5 5" travel-node="transition: move; animationDur: 2000; animationEasing: easeInOutElastic" ></a-box>
+        <a-entity look-at="[camera]" position="0 0 1">
+          <a-entity scale="3 3 3" position="-1 0 0" obj-model="obj: #samstag-obj; mtl: #samstag-mtl"></a-entity>
+        </a-entity>
+      </a-entity>
+
+      <!-- Boden -->
+      <a-entity position="-3.7 -3 -3" scale="2 2 2" align="center" obj-model="obj: #floor-obj; mtl: #floor-mtl"></a-entity>
+
+      <!-- Freitag -->
+      <a-box id="box1" position="2 0 -15" rotation="0 10 0" src="Artwork/1_Bandx.jpg" >
+        <a-animation attribute="rotation" dur="10000" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
+      </a-box>
+      <a-box id="box2" position="4 1 -17" rotation="0 -10 0" src="Artwork/2_Dachs.jpg" >
+        <a-animation attribute="rotation" dur="5000" easing="linear" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
+      </a-box>
+      <a-box id="box31" position="8 0 -18" rotation="0 10 0" src="Artwork/3.1_FrankPowers.jpg" >
+        <a-animation attribute="rotation" dur="10000" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
+      </a-box>
+      <a-box id="box32" position="9 -1 -15" rotation="0 -10 0" src="Artwork/3.2_MuthoniDrummerQueen.jpg" >
+        <a-animation attribute="rotation" dur="5000" easing="linear" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
+      </a-box>
+      <a-box id="box4" position="9 1 -13" rotation="0 -10 0" src="Artwork/4_SovietSoviet.jpg" >
+        <a-animation attribute="rotation" dur="6000" easing="linear" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
+      </a-box>
+      <a-box id="box5" position="10 0 -10" rotation="0 -10 0" src="Artwork/5_LostinNature.jpg" >
+        <a-animation attribute="rotation" dur="6000" easing="linear" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
+      </a-box>
+
+      <!-- Samstag -->
+      <a-box id="box6" position="2 0 3" rotation="0 10 0" src="Artwork/6_Blackseadahu.jpg" >
+        <a-animation attribute="rotation" dur="10000" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
+      </a-box>
+      <a-box id="box7" position="-5 0 3" rotation="0 -10 0" src="Artwork/7_BobbyAlu.jpg" >
+        <a-animation attribute="rotation" dur="5000" easing="linear" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
+      </a-box>
+      <a-box id="box8" position="2 0 6" rotation="0 -10 0" src="Artwork/9_Flut.jpg" >
+        <a-animation attribute="rotation" dur="6000" easing="linear" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
+      </a-box>
+      <a-box id="box8" position="0 0 6" rotation="0 -10 0" src="Artwork/8_Otheranimals.jpg" >
+        <a-animation attribute="rotation" dur="8000" easing="linear" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
+      </a-box>
+      <a-box id="box10" position="-1 1 6" rotation="0 10 0" src="Artwork/10_Fuckartletsdance.jpg" >
+        <a-animation attribute="rotation" dur="10000" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
+      </a-box>
+      <a-box id="box11" position="-4 1 4" rotation="0 -10 0" src="Artwork/11_Nerven.jpg" >
+        <a-animation attribute="rotation" dur="5000" easing="linear" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
+      </a-box>
+      <a-box id="box12" position="3 1 5" rotation="0 -10 0" src="Artwork/12_Flexstreetboys.jpg" >
+        <a-animation attribute="rotation" dur="6000" easing="linear" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
+      </a-box>
+    </a-scene>
+    <script>
+      var logo = document.getElementById("logo");
+      window.onload = function () 
+      { 
+        setTimeout(function(){
+          logo.addEventListener('click', function (evt) { window.location.href = 'https://www.kleinlautfestival.ch'; })},
+          5000);
+      }  
+    </script>
+  </body>
+</html>

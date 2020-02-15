@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles.css">
+    <title>kleinLaut Festival</title>
+</head>
+
+<body>
+    <div class="MainWrapper">
+        <div id="HomeWrapper">
+            <div id="LogoWrapper">
+                <img id="Logo" src="svg/1_Home_Logo/Logo_und_deko.svg" alt="">
+                <a id="FB" href="https://www.facebook.com/kleinlaut.festival"><img src="svg/4_Social Icons/FB.svg" alt=""></a>
+                <a id="IG" href="#"><img src="svg/4_Social Icons/INSTA.svg" alt=""></a>
+
+                <a id="Hansli" href="#"><img src="svg/2_Kafer_Home/Hansli.svg" alt=""></a>
+
+                <a id="YT" href="https://www.youtube.com/channel/UCOoUTDoz6q7T2-ZczPJnfHA"><img src="svg/4_Social Icons/YOUTUBE.svg" alt=""></a>
+                <a id="SC" href="#"><img src="svg/4_Social Icons/soundcloud.svg" alt=""></a>
+            </div>
+            <div id="NewsWrapper">
+                <img id="Logo" src="svg/5_deko_elemente/1_Home/news_Deko.svg" alt="">
+                <div id="NewsContentWrapper">
+                    <div class="NewsNav"><a onclick="loadWeiter(-1)">&lsaquo;</a></div>
+                    <div id="NewsContent">
+                        <H2>Helfer wanted!</H2><small>07.06.2017</small><p class="hyphenate" text lang="de">
+                        Keine 60 Tage mehr und das kleinLaut Festival geht in die dritte Runde. Damit wir das schaffen, brauchen wir noch helfende Hände. Besonders für die Aufbauwoche vom 21.07 - 27.07 sind wir für jeden Hammerschwingenden froh. <a href="https://docs.google.com/forms/d/11ZMbjV9JT6FcoNyMK4A5QR2lvRhQ_bldRPCdj0BV1u0/viewform?edit_requested=true" target="_blank">Wenn du interessiert bist, <b>melde dich hier an</b>.</a>
+                    </div>
+                    <div class="NewsNav"><a onclick="loadWeiter(1)">&rsaquo;</a></div>
+                </div>
+                <img id="Logo" src="svg/5_deko_elemente/1_Home/news_Deko_rot.svg" alt="">
+            </div>
+            <div id="HomeLogo">
+                <img src="Logos/Kuratorium.svg" alt="">
+                <img src="Logos/bewegung.svg" alt="">
+                <div>
+                    <div>Getränkepartner</div>
+                    <div>
+                        <img src="Logos/meier.svg" alt="">
+                        <img src="Logos/ckweine.svg" alt="">
+                    </div>
+                </div>
+                <img src="Logos/piani.svg" alt="">
+
+            </div>
+        </div>
+
+
+        <nav class="HomeNav">
+            <a id="ProgrammHome" href="programm.html"><img src="svg/2_Kafer_Home/Kafer_Programm_Home.svg" alt=""></a>
+            <a id="FestivalHome" href="festival.html"><img src="svg/2_Kafer_Home/Kafer_Festival_Home.svg" alt=""></a>
+            <a id="HelfenHome" href="helfen.html"><img src="svg/2_Kafer_Home/Kafer_Helfen_Home.svg" alt=""></a>
+            <a id="WirHome" href="wir.html"><img src="svg/2_Kafer_Home/Kafer_um_uns_Home.svg" alt=""></a>
+        </nav>
+    </div>
+
+    <script>
+        var News = document.getElementById("NewsContent");
+        var i = 0;
+
+        var news = ["<H2>Helfer wanted!</H2><small>07.06.2017</small><p class='hyphenate' text lang='de'>Keine 60 Tage mehr und das kleinLaut Festival geht in die dritte Runde. Damit wir das schaffen, brauchen wir noch helfende Hände. Besonders für die Aufbauwoche vom 21.07 - 27.07 sind wir für jeden Hammerschwingenden froh. <a href='https://docs.google.com/forms/d/11ZMbjV9JT6FcoNyMK4A5QR2lvRhQ_bldRPCdj0BV1u0/viewform?edit_requested=true' target='_blank'>Wenn du interessiert bist, melde dich hier an.</a>",
+            "<H2>Konzertwanderung in Brugg</H2><small>08.05.2017</small><p class='hyphenate' text lang='de'>Die Frühlings-Pubreihe geht zu Ende und wir feiern den Saisonabschluss mit einer Konzertwanderung durch <b>Brugg</b>. Am <b>Samstag, 20.05.2017</b> treten auf:<br>16:00 Eisi Pärkli // <b>THE NOZEZ</b><br>17:30 Katarakt // <b>Tobias Carshey</b><br>19:00 Laura's Pub // <b>Sophia Louise</b><br>20:30 Odeon Brugg Garten // <b>Marylane</b><br>22:30 Jugendkulturhaus Piccadily // <b>What Josephine Saw</b><br><br><a href='https://www.facebook.com/events/640847842770729/' target='_blank'>Mehr Infos hier klicken</a>",
+            "<H2>Das Musikprogramm ist da!</H2><small>22.04.2017</small><p class='hyphenate' text lang='de'>Heute ist das gesammte Programm für das diesjährige Festival online. Neben <b>Astronautalis</b> (US), <b>One Sentence.Supervisor</b> (CH) und <b>Fùgù Mango</b> (BE), werden uns noch einige weitere Leckerbissen besuchen. Schau dir das gesammte Line-Up unter dem Menüpunkt \"Programm\" an.</p>",
+            "<H2>Helferanmeldung online</H2><small>22.03.2017</small><p class='hyphenate' text lang='de'>Nicht bloss als Zuschauer das kleinLaut Festival 2017 erleben, sondern aktiv mitwirken? Das würde uns freuen! Wir suchen wie jedes Jahr Menschen für Bar-, Küchen-, Küchenschichten (etc.). <a href='https://docs.google.com/forms/d/11ZMbjV9JT6FcoNyMK4A5QR2lvRhQ_bldRPCdj0BV1u0/viewform?edit_requested=true' target='_blank'>Melde dich mit diesem Formular an (klick mich!)</a>. Für den Tag deiner Schicht erhältst du kostenlosen Eintritt sowie Verpflegung.</p>",
+     		"<H2>kleinLaut im Pub is back</H2><small>21.02.2017</small><p class='hyphenate' text lang='de'>Die kleinLaut im Pub Reihe ist wieder zurück in Laura's Pub (Brugg). Das Programm kannst du auf der <a href='https://www.facebook.com/kleinlautimPub/?fref=ts'>Facebook-Seite</a> oder hier unter dem Menüpunkt 'Programm' anschauen.</p>",
+        	"<H2>kleinLaut & Festivalforum</H2><small>15.01.2017</small><p class='hyphenate' text lang='de'>Einige Festivals im Aargau spannen zusammen und das kleinLaut nimmt an der Kooperation teil. Das Festivalforum ist ab sofort <a href='http://www.festivalforum.ch' target='_blank'>online</a>.<br><br><center><a href='http://www.festivalforum.ch' target='_blank'><img src='img/festivalforum.jpg'></a></center></p>",
+            "<H2>KLEINLAUT ZUM DRITTEN</H2><small>11.12.2016</small><p class='hyphenate' text lang='de'>Kurz und knackig: Wir werden auch 2017 ein kleinLaut Festival in Riniken veranstalten. Den <b>28. und 29. Juli 2017</b> dick in den Kalender einzutragen ist also angesagt.</p>",
+            
+            "<H2>KLEINLAUT IM PUB </H2><small>12.09.2016</small><p class='hyphenate' text lang='de'>Die Pubreihe geht in die zweite Runde: Eine Vielzahl an Musikern besucht uns ab dem 15. September im zweiwöchtigen Takt (immer donnerstags) in Laura's Pub in Brugg. Der Eintritt ist frei (Kollekte).<br><br>Wer alles spielt, könnt ihr unter dem Navigationspunkt 'Programm' oder direkt auf der <a href='https://www.facebook.com/kleinlautimPub/?fref=ts' target='_blank'>kleinLaut im Pub-Facebookseite</a> anschauen.",
+            
+            "<H2>BILDER </H2><small>14.08.2016</small><p class='hyphenate' text lang='de'>Bilder vom kleinLaut Festival 2016 könnt ihr euch jetzt unter dem Punkt \"<a href='http://kleinlautfestival.ch/wir.html' target='_self''>Rund um uns</a>\" anschauen. Viel Spass beim Rückbesinnen!<br><br>Auf unserer Facebook-Seite haben wir übrigens eine <a href='https://www.facebook.com/kleinlaut.festival/photos/?tab=album&album_id=520375748170100' target='_blank'>andere Auswahl</a> hochgeladen.",
+            
+            "<H2>BILDER </H2><small>14.08.2016</small><p class='hyphenate' text lang='de'>Bilder vom kleinLaut Festival 2016 könnt ihr euch jetzt unter dem Punkt '<a href='http://kleinlautfestival.ch/wir.html' target='_self'>Rund um uns</a>' anschauen. Viel Spass beim Rückbesinnen!<br><br>Auf unserer Facebook-Seite haben wir übrigens eine <a href='https://www.facebook.com/kleinlaut.festival/photos/?tab=album&album_id=520375748170100' target='_blank'>andere Auswahl</a> hochgeladen.",
+            
+            "<H2>DANKE! </H2><small>25.07.2016</small><p class='hyphenate' text lang='de'>Wir bedanken uns herzlichst für euren zahlreichen Besuch uBILDERnd die fantastische Stimmung, die ihr dem Festival verliehen habt! Bilder werden in Kürze folgen.",
+            "                   <H2>Es geht los!</H2><small>10.07.2016</small><p class='hyphenate' text lang='de'>In weniger als zwei Wochen geht das kleinLaut Festival in die zweite Runde. Nachdem wir in der Bastelwoche schon fleissig geklebt, gemalt und genäht haben, werden wir ab Freitag auf dem Gelände mit dem Aufbau beginnen. Auf <a href='https://www.facebook.com/kleinlaut.festival/?ref=ts&fref=ts' target='_blank'><b>Facebook</b></a> halten wir dich mit Neuigkeiten auf dem Laufenden und freuen uns, Dich bald in Riniken willkommen zu heissen!",
+                        
+            "<H2>Helfen? Danke!</H2><small>26.05.2016</small><p class='hyphenate' text lang='de'>Die Vorbereitungen für das diesjährige Festival gehen in die heisse Phase!<br><br>Für die Bar, den Einlass, den Auf-  und Abbau sind wir noch auf der Suche nach helfenden Käfern. Wenn du am kleinLaut Festival mitwirken willst, freuen wir uns sehr über eine <a href='https://docs.google.com/forms/d/1SLi3LhBu1wxC01r7oVBR0mrJ8iNYnZacBTkpcLTXKNU/viewform' target='_blank'>Anmeldung über dieses Formular (klick mich!).</a>",
+            
+            "<H2>kleinLaut in den Pubs</H2><small>06.05.2016</small><p class='hyphenate' text lang='de'>Am Samstag, 21.05.2015 ziehen wir mit kleinen und feinen Konzerten durch Brugg: <br><center><b>Duo Malentendu, Allen Finch, Figaro Sportelli, Panda Lux, Captn Wendt und Max and the McForelles</b></center><br>spielen ab 16:00 - Start im Katarakt.<br><br><a href='https://www.facebook.com/events/587260118109455/'>Alle Infos gibt es auf Facebook</a>",
+            
+            "<H2>LAURA's PUB</H2><p class='hyphenate text' lang='de'>KleinLaut wird neben dem Festival künftig in Laura's Pub in Brugg mit einer Konzertreihe präsent sein.  Hier gibts den <a href='https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xlf1/t31.0-8/12697385_949421201811291_5077559576106410422_o.jpg' target='_blank'>Flyer</a> und hier die <a href='https://www.facebook.com/kleinlautimPub/?fref=ts' target='_blank'>Facebookseite</a>.",
+
+            "<H2>RÜCKSCHAU</H2><p class='hyphenate text' lang='de'><iframe width='260' height='147' src='https://www.youtube.com/embed/XIu2HObUb2I' frameborder='0' allowfullscreen></iframe>"
+       ];
+
+        function loadWeiter(d) {
+            if ((i + d) >= 0) {
+                i = (i + d) % news.length;
+            } else {
+                i = news.length - 1;
+            }
+            News.innerHTML = news[i];
+        }
+    </script>
+</body>
+
+</html>

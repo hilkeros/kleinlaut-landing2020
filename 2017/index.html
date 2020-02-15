@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="homestyles.css">
+        <style>
+            .MainWrapper{
+                padding-left: 0;
+            }
+        </style>
+        <title>kleinLaut Festival</title>
+    </head>
+
+    <body>
+        <div class="TitleMainWrapper">
+            <div id="TitleHomeWrapper">
+                <div id="LogoWrapper"></div>
+                <div id="NewsWrapper">
+                    <div id="NewsContentWrapper">
+                        <div class="NewsNav"><a onclick="loadWeiter(-1)">&lsaquo;</a></div>
+                        <div id="NewsContent">
+                            <H2 class="HellBlauBack WeissFont">Musikprogramm Teil 2</H2><br>
+                            <small>08.04.2018</small>
+                            <p class='hyphenate text' lang='de'>Mit Teil 2 geht's weiter:<br><br>
+                            BLACK SEA DAHU (CH)<br>
+                            BOBBY ALU (AUS)<br>
+                            OTHER ANIMALS (CH)<br>
+                            FLUT (AT)<br>
+                            DIE NERVEN (DE)<br>
+                            FUCK ART LET'S DANCE (DE)<br>
+                            FLEXSTREETBOYS DJ-SET (CH)<br><br>
+                            <a href="https://www.starticket.ch/de/tickets/kleinlaut-festival-20180727-1500-20180729-0200-im-lee-riniken" target="_blank">Tickets sichern</a> - <a href="https://www.facebook.com/events/139991350149220/" target="_blank">Facebook Veranstaltung</a>
+                        </div>
+                        <div class="NewsNav"><a onclick="loadWeiter(1)">&rsaquo;</a></div>
+                    </div>
+                </div>
+
+                <nav class="HomeNav">
+                    <a href="programm.html" >
+                        <div id="ProgrammHome"></div>
+                    </a>
+                    <a href="festival.html">
+                        <div id="FestivalHome" ></div>
+                    </a>
+                    <a href="wir.html">
+                        <div id="WirHome"></div>
+                    </a>
+                    <a href="helfen.html">
+                        <div id="HelfenHome"></div>
+                    </a>
+                </nav>
+
+                <div id="SponsorWrapper">
+                    <div id="Kuratorium"></div>
+                    <div id="Getrnkepartner"></div>
+                    <div id="Bewegung"></div>
+                    <div id="Bouillon"></div>
+                    <div id="Kanalk"></div> 
+                    <div id="Schreiner"></div> 
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var News = document.getElementById("NewsContent");
+            var NewsContentWrapper = document.getElementById("NewsContentWrapper");
+            var i = 0;
+
+            var news = ["<H2 class='HellBlauBack WeissFont'>Musikprogramm Teil 2</H2><br><small>08.04.2018</small><p class='hyphenate text' lang='de'>Mit Teil 2 geht's weiter:<br><br>BLACK SEA DAHU (CH)<br>BOBBY ALU (AUS)<br>OTHER ANIMALS (CH)<br>FLUT (AT)<br>DIE NERVEN (DE)<br>FUCK ART LET'S DANCE (DE)<br>FLEXSTREETBOYS DJ-SET (CH)<br><br><a href='https://www.starticket.ch/de/tickets/kleinlaut-festival-20180727-1500-20180729-0200-im-lee-riniken' target='_blank'>Tickets sichern</a> - <a href='https://www.facebook.com/events/139991350149220/' target='_blank'>Facebook Veranstaltung</a>",
+            "<H2 class='HellBlauBack WeissFont'>Musikprogramm Teil 1</H2><br><small>01.04.2018</small><p class='hyphenate text' lang='de'>Wir freuen uns, das Musikprogramm vom diesjährigen Freitag bekanntzugeben:<br><br>bandXnordwest Gewinner/in (CH)<br>DACHS (CH)<br>MUTHONI DRUMMER QUEEN (KEN/CH)<br>SOVIET SOVIET (IT)<br>LOST IN NATURE DJ-SET (CH)<br><br><a href='https://www.starticket.ch/de/tickets/kleinlaut-festival-20180727-1500-20180729-0200-im-lee-riniken' target='_blank'>Tickets sichern</a> - <a href='https://www.facebook.com/events/139991350149220/' target='_blank'>Facebook Veranstaltung</a> <p>", 
+                        
+            "<H2 class='HellBlauBack WeissFont'>kleinLaut im Pub 2018</H2><br><small>15.02.2018</small><p class='hyphenate text' lang='de'>Neben der Ankündigung, dass das <a href='https://www.facebook.com/events/139991350149220/'>vierte kleinLaut-Festival am <b>27. und 28. Juli 2018</b></a> stattfinden wird, hier noch ein weiterer Leckerbissen:</p><p>Für die Zeit bis zum Sommer haben wir wieder einige Perlen ausgegraben, die jeden zweiten Donnerstag Laura's Pub in Brugg bespielen. Mehr Informationen gibt es hier: <a href='https://www.facebook.com/pg/kleinlautimPub' target='_blank>kleinLaut im Pub</a> </p>",
+                        
+            "<H2 class='HellBlauBack WeissFont'>Wir danken!</H2><br><small>02.08.2017</small><p class='hyphenate text' lang='de'>Das kleinLaut Team bedankt sich bei allen Helfern, Gästen, Gönnern, Sponsoren und Technikern dafür, dass sie die dritte Ausgabe zur bisher besten gemacht haben. Euer Feedback aus dem Sekretariat nehmen wir uns zu Herzen. Auf Facebook gibt es bereits <a href='https://www.facebook.com/kleinlaut.festival/' target='blank'>erste Bilder</a>, auf Youtube spannende <a href='https://www.youtube.com/channel/UCOoUTDoz6q7T2-ZczPJnfHA' target='blank'>360° Videos vom Aufbau, Festival und Abbau</a>. Eine Bilderauswahl für die Website folgt in den nächsten Tagen.</p>"," <H2 class='HellBlauBack WeissFont'>Vorverkauf online!</H2><br><small>04.07.2017</small><p class='hyphenate text' lang='de'>Jetzt gehts Schlag auf Schlag: Ihr könnt euer Tickets jetzt online über Starticket.ch sichern.</p><a href='https://www.starticket.ch/de/tickets/kleinlaut-festival-20170728-1500-20170730-0200-im-lee-riniken' target='_blank'>STARTICKET VVK</a>",
+                        
+            "<H2 class='HellBlauBack WeissFont'>Helfer wanted!</H2><br><small>07.06.2017</small><p class='hyphenate' text lang='de'>Keine 60 Tage mehr und das kleinLaut Festival geht in die dritte Runde. Damit wir das schaffen, brauchen wir noch helfende Hände. Besonders für die Aufbauwoche vom 21.07 - 27.07 sind wir für jeden Hammerschwingenden froh. <a href='https://docs.google.com/forms/d/11ZMbjV9JT6FcoNyMK4A5QR2lvRhQ_bldRPCdj0BV1u0/viewform?edit_requested=true' target='_blank'>Wenn du interessiert bist, melde dich hier an.</a>",
+                
+            "<H2 class='HellBlauBack WeissFont'>Konzertwanderung in Brugg</H2><br><small>08.05.2017</small><p class='hyphenate' text lang='de'>Die Frühlings-Pubreihe geht zu Ende und wir feiern den Saisonabschluss mit einer Konzertwanderung durch <b>Brugg</b>. Am <b>Samstag, 20.05.2017</b> treten auf:<br>16:00 Eisi Pärkli // <b>THE NOZEZ</b><br>17:30 Katarakt // <b>Tobias Carshey</b><br>19:00 Laura's Pub // <b>Sophia Louise</b><br>20:30 Odeon Brugg Garten // <b>Marylane</b><br>22:30 Piccadily // <b>What Josephine Saw</b><br>",
+                
+            "<H2 class='HellBlauBack WeissFont'>Das Musikprogramm ist da!</H2><br><small>22.04.2017</small><p class='hyphenate' text lang='de'>Heute ist das gesammte Programm für das diesjährige Festival online. Neben <b>Astronautalis</b> (US), <b>One Sentence.Supervisor</b> (CH) und <b>Fùgù Mango</b> (BE), werden uns noch einige weitere Leckerbissen besuchen. Schau dir das gesammte Line-Up unter dem Menüpunkt \"Programm\" an.</p>",
+                
+            "<H2 class='HellBlauBack WeissFont'>Helferanmeldung online</H2><br><small>22.03.2017</small><p class='hyphenate' text lang='de'>Nicht bloss als Zuschauer das kleinLaut Festival 2017 erleben, sondern aktiv mitwirken? Das würde uns freuen! Wir suchen wie jedes Jahr Menschen für Bar-, Küchen-, Küchenschichten (etc.). <a href='https://docs.google.com/forms/d/11ZMbjV9JT6FcoNyMK4A5QR2lvRhQ_bldRPCdj0BV1u0/viewform?edit_requested=true' target='_blank'>Melde dich mit diesem Formular an (klick mich!)</a>. Für den Tag deiner Schicht erhältst du kostenlosen Eintritt sowie Verpflegung.</p>",
+     		"<H2>kleinLaut im Pub is back</H2><small>21.02.2017</small><p class='hyphenate' text lang='de'>Die kleinLaut im Pub Reihe ist wieder zurück in Laura's Pub (Brugg). Das Programm kannst du auf der <a href='https://www.facebook.com/kleinlautimPub/?fref=ts'>Facebook-Seite</a> oder hier unter dem Menüpunkt 'Programm' anschauen.</p>",
+                
+        	"<H2 class='HellBlauBack WeissFont'>kleinLaut & Festivalforum</H2><br><small>15.01.2017</small><p class='hyphenate' text lang='de'>Einige Festivals im Aargau spannen zusammen und das kleinLaut nimmt an der Kooperation teil. Das Festivalforum ist ab sofort <a href='http://www.festivalforum.ch' target='_blank'>online</a>.",
+                
+            "<H2>KLEINLAUT ZUM DRITTEN</H2><br><small>11.12.2016</small><p class='hyphenate' text lang='de'>Kurz und knackig: Wir werden auch 2017 ein kleinLaut Festival in Riniken veranstalten. Den <b>28. und 29. Juli 2017</b> dick in den Kalender einzutragen ist also angesagt.</p>",
+            
+            "<H2 class='HellBlauBack WeissFont'>KLEINLAUT IM PUB </H2><br><small>12.09.2016</small><p class='hyphenate' text lang='de'>Die Pubreihe geht in die zweite Runde: Eine Vielzahl an Musikern besucht uns ab dem 15. September im zweiwöchtigen Takt (immer donnerstags) in Laura's Pub in Brugg. Der Eintritt ist frei (Kollekte).<br><br>Wer alles spielt, könnt ihr unter dem Navigationspunkt 'Programm' oder direkt auf der <a href='https://www.facebook.com/kleinlautimPub/?fref=ts' target='_blank'>kleinLaut im Pub-Facebookseite</a> anschauen.",
+            
+            "<H2 class='HellBlauBack WeissFont'>BILDER </H2><br><small>14.08.2016</small><p class='hyphenate' text lang='de'>Bilder vom kleinLaut Festival 2016 könnt ihr euch jetzt unter dem Punkt \"<a href='http://kleinlautfestival.ch/wir.html' target='_self''>Rund um uns</a>\" anschauen. Viel Spass beim Rückbesinnen!<br><br>Auf unserer Facebook-Seite haben wir übrigens eine <a href='https://www.facebook.com/kleinlaut.festival/photos/?tab=album&album_id=520375748170100' target='_blank'>andere Auswahl</a> hochgeladen.",
+            
+            "<H2 class='HellBlauBack WeissFont'>BILDER </H2><br><small>14.08.2016</small><p class='hyphenate' text lang='de'>Bilder vom kleinLaut Festival 2016 könnt ihr euch jetzt unter dem Punkt '<a href='http://kleinlautfestival.ch/wir.html' target='_self'>Rund um uns</a>' anschauen. Viel Spass beim Rückbesinnen!<br><br>Auf unserer Facebook-Seite haben wir übrigens eine <a href='https://www.facebook.com/kleinlaut.festival/photos/?tab=album&album_id=520375748170100' target='_blank'>andere Auswahl</a> hochgeladen.",
+            
+            "<H2 class='HellBlauBack WeissFont'>DANKE! </H2><br><small>25.07.2016</small><p class='hyphenate' text lang='de'>Wir bedanken uns herzlichst für euren zahlreichen Besuch und die fantastische Stimmung, die ihr dem Festival verliehen habt! Bilder werden in Kürze folgen."
+           
+        ];
+
+            function loadWeiter(d) {
+                if ((i + d) >= 0) {
+                    i = (i + d) % news.length;
+                } else {
+                    i = news.length - 1;
+                }
+                News.innerHTML = news[i];
+            }
+        </script>
+    </body>
+</html>
