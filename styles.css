@@ -6,13 +6,25 @@ body {
 #logo {
 	max-width: 30vw;
 	margin-top: 50px;
+	transition: all .7s ease-in-out;
 }
+
+#logo:hover { transform: scale(1.05); }
 
 .moto {
 	margin-top: 50px;
 }
 
+.moto p {
+	line-height: 0.6;
+}
+
+.socials {
+	display: flex;
+	justify-content: center;
+}
+
 .socials img {
-	max-height: 30px;
-	padding: 5px;
+	height: 30px;
+	padding: 10px;
 }
