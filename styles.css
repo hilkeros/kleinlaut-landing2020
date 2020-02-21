@@ -27,4 +27,7 @@ body {
 .socials img {
 	height: 30px;
 	padding: 10px;
+	transition: all .3s ease-in-out;
 }
+
+.socials img:hover { transform: scale(1.1); }
