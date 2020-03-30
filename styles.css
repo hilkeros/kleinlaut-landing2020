@@ -1,6 +1,12 @@
 body {
 	text-align: center;
 	font-family: 'Quicksand', sans-serif;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+a {
+	color: #000;
 }
 
 #logo {
@@ -32,12 +38,24 @@ body {
 
 .socials img:hover { transform: scale(1.1); }
 
+.call {
+	margin-top: 20px;
+}
+
 /*Kunstwald*/
 
 .content-wrapper {
 	text-align: left;
 	max-width: 700px;
 	margin: auto;
+}
+
+.content-wrapper img {
+	max-width: 100%;
+}
+
+.header {
+	margin-bottom: 50px;
 }
 
 .content-wrapper h1, .summary, .corona, .download {
@@ -73,4 +91,8 @@ body {
 
 .warning {
 	color: #FFC000;
+}
+
+.footer {
+	margin-top: 50px;
 }
