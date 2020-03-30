@@ -31,3 +31,46 @@ body {
 }
 
 .socials img:hover { transform: scale(1.1); }
+
+/*Kunstwald*/
+
+.content-wrapper {
+	text-align: left;
+	max-width: 700px;
+	margin: auto;
+}
+
+.content-wrapper h1, .summary, .corona, .download {
+	text-align: center;
+}
+
+.summary {
+	font-size: 1.3em;
+}
+
+.corona {
+	font-size: 1.1em;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.corona span {
+		background-color: #FFC000;
+}
+
+.download a {
+	color: #000;
+	font-size: 0.9em;
+}
+
+.download {
+	margin-bottom: 50px;
+}
+
+.content-wrapper h2 {
+	text-transform: uppercase;
+}
+
+.warning {
+	color: #FFC000;
+}
