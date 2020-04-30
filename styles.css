@@ -2,7 +2,7 @@ body {
 	text-align: center;
 	font-family: 'Quicksand', sans-serif;
 	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-bottom: 50px;
 }
 
 a {
@@ -23,6 +23,11 @@ a {
 
 .moto p {
 	line-height: 0.6;
+}
+
+.news {
+	max-width: 600px;
+	margin: auto;
 }
 
 .socials {
