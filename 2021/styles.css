@@ -9,12 +9,25 @@ a {
 	color: #000;
 }
 
+li {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.m50 {
+	margin-top: 50px
+}
+
+.emph {
+	color: limegreen;
+}
+
 .nav {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
 	padding: 20px;
-	
+	background-color: white;
 	position: sticky;
 	top: 0;
 	width: 100%;
@@ -78,7 +91,7 @@ a {
 
 
 section {
-	padding-top: 60px;
+	padding-top: 80px;
 	max-width: 80%;
 	margin: auto;
 	text-align: left;
@@ -86,6 +99,15 @@ section {
 
 section h2 {
 	text-align: center;
+}
+
+.timeTable {
+	display: flex;
+	font-size: 1.2em;
+}
+
+.timeLabel {
+	width: 200px
 }
 
 .programmItem {
@@ -102,8 +124,8 @@ section h2 {
 }
 
 .programmHalf img {
-	width: 300px;
-	height: 300px;
+	max-width: 300px;
+	max-height: 300px;
 }
 
 .programmText {
@@ -111,7 +133,7 @@ section h2 {
 }
 
 .call {
-	margin-top: 20px;
+	margin-top: 50px;
 }
 
 @media screen and (max-width:700px) {
@@ -124,6 +146,14 @@ section h2 {
 
 	.content {
 		margin-top: 100px;
+	}
+
+	#logo {
+		max-width: 80vw;
+	}
+
+	section {
+		padding-top: 100px;
 	}
 
 	.programmHalf, .programmText {
