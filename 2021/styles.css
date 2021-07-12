@@ -23,26 +23,32 @@ li {
 }
 
 .nav {
-	display: flex;
+	/* display: flex;
 	justify-content: space-around;
-	flex-wrap: wrap;
+	flex-wrap: wrap; */
 	padding: 20px;
-	background-color: white;
+	/* background-color: white; */
 	position: sticky;
-	top: 0;
+	top: 100px;
 	width: 100%;
 	z-index: 10;
 }
 
 .content {
-	margin-top: 60px;
+	margin-top: -20px;
 }
 
 
 .navItem {
 	background-color: black;
-	min-width: 320px;
-	margin-bottom: 10px;
+	/* min-width: 320px; */
+	width: 320px;
+	margin-bottom: 20px;
+	transform: rotate(-30deg);
+}
+
+.secondItem {
+	transform: rotate(-30deg) translate(30px)
 }
 
 .navItem a {
@@ -93,7 +99,8 @@ li {
 section {
 	padding-top: 80px;
 	max-width: 80%;
-	margin: auto;
+	/* margin: auto; */
+	margin-left: 30%;
 	text-align: left;
 }
 
@@ -132,6 +139,19 @@ section h2 {
 	width: 50%;
 }
 
+.map {
+	display: flex;
+}
+
+.map img {
+	max-width: 50%;
+}
+
+.legend {
+	max-width: 50%;
+	margin-top: 100px;
+}
+
 .call {
 	margin-top: 50px;
 }
@@ -139,9 +159,16 @@ section h2 {
 @media screen and (max-width:700px) {
 	.nav {
 		max-width: 100%;
+		top: 40px;
 	}
+
 	.navItem {
-		max-width: 80%;
+		width: 220px;
+		margin-bottom: 10px;
+	}
+	.navItem a {
+		/* max-width: 80%; */
+		font-size: 0.8em;
 	}
 
 	.content {
@@ -153,7 +180,8 @@ section h2 {
 	}
 
 	section {
-		padding-top: 100px;
+		padding-top: 120px;
+		margin-left: 10%;
 	}
 
 	.programmHalf, .programmText {
@@ -162,5 +190,18 @@ section h2 {
 
 	.programmHalf img {
 		width: 90%;
+	}
+
+	.map {
+		display: block;
+	}
+
+	.map img {
+		max-width: 90%;
+	}
+
+	.legend {
+		max-width: 100%;
+		margin-top: 10px;
 	}
 }
