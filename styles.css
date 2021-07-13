@@ -9,9 +9,57 @@ a {
 	color: #000;
 }
 
+li {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.m50 {
+	margin-top: 50px
+}
+
+.emph {
+	color: limegreen;
+}
+
+.nav {
+	padding: 20px;
+	position: sticky;
+	top: 100px;
+	width: 30%;
+	z-index: 10;
+}
+
+.content {
+	margin-top: -20px;
+}
+
+
+.navItem {
+	background-color: black;
+	/* min-width: 320px; */
+	width: 320px;
+	margin-bottom: 20px;
+	transform: rotate(-30deg);
+}
+
+.secondItem {
+	transform: rotate(-30deg) translate(30px)
+}
+
+.navItem a {
+	color: white;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+
+.navItem a:hover {
+	color: limegreen;
+}
+
 #logo {
 	max-width: 30vw;
-	margin-top: 50px;
+	margin-top: 30px;
 	transition: all .7s ease-in-out;
 }
 
@@ -43,61 +91,123 @@ a {
 
 .socials img:hover { transform: scale(1.1); }
 
-.call {
-	margin-top: 20px;
-}
 
-/*Kunstwald*/
-
-.content-wrapper {
+section {
+	max-width: 80%;
+	/* margin: auto; */
+	margin-left: 30%;
 	text-align: left;
-	max-width: 700px;
-	margin: auto;
 }
 
-.content-wrapper img {
-	max-width: 100%;
-}
-
-.header {
-	margin-bottom: 50px;
-}
-
-.content-wrapper h1, .summary, .corona, .download {
+section h2 {
 	text-align: center;
+	padding-top: 80px;
 }
 
-.summary {
-	font-size: 1.3em;
+.timeTable {
+	display: flex;
+	font-size: 1.2em;
 }
 
-.corona {
-	font-size: 1.1em;
+.timeLabel {
+	width: 200px
+}
+
+.programmItem {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 800px;
+	margin: auto;
+	text-align: left;
+	padding-top: 40px;
+}
+
+.programmHalf {
+	width: 50%;
+}
+
+.programmHalf img {
+	max-width: 300px;
+	max-height: 300px;
+}
+
+.programmText {
+	width: 50%;
+}
+
+.map {
+	display: flex;
+}
+
+.map img {
+	max-width: 50%;
+}
+
+.legend {
+	max-width: 50%;
+	margin-top: 100px;
+}
+
+.call {
 	margin-top: 50px;
-	margin-bottom: 50px;
 }
 
-.corona span {
-		background-color: #FFC000;
-}
+@media screen and (max-width:700px) {
+	.nav {
+		max-width: 100%;
+		top: 20px;
+	}
 
-.download a {
-	color: #000;
-	font-size: 0.9em;
-}
+	.navItem {
+		/* width: 220px; */
+		margin-bottom: 10px;
+		transform: none; 
+	}
+	.navItem a {
+		max-width: 80%;
+		/* font-size: 0.8em; */
+	}
 
-.download {
-	margin-bottom: 50px;
-}
+	.content {
+		margin-top: 100px;
+	}
 
-.content-wrapper h2 {
-	text-transform: uppercase;
-}
+	#logo {
+		max-width: 80vw;
+	}
 
-.warning {
-	color: #FFC000;
-}
+	section {
+		margin-left: 10%;
+	}
 
-.footer {
-	margin-top: 50px;
+	section h2 {
+		padding-top: 120px;
+	}
+
+	.timeTable {
+		font-size: 1em;
+		flex-wrap: wrap;
+	} 
+
+
+	.programmHalf, .programmText {
+		width: 100%;
+	}
+
+	.programmHalf img {
+		width: 90%;
+	}
+
+	.map {
+		display: block;
+	}
+
+	.map img {
+		max-width: 90%;
+	}
+
+	.legend {
+		max-width: 100%;
+		margin-top: 10px;
+	}
 }
