@@ -34,6 +34,32 @@ li {
 	z-index: 10;
 }
 
+.kanalk {
+	position: absolute;
+	top: 40px;
+	right: 40px;
+}
+
+
+.kanalk p {
+	background-color: black;
+	color: white;
+	min-width: 240px;
+}
+
+.kanalk a {
+	color: white;
+	text-decoration: none;
+}
+
+.kanalk a:hover {
+	color: limegreen;
+}
+
+.kanalk img {
+	width: 100px;
+}
+
 .content {
 	margin-top: -20px;
 }
@@ -170,6 +196,10 @@ section h2 {
 	.navItem a {
 		max-width: 80%;
 		/* font-size: 0.8em; */
+	}
+
+	.kanalk {
+		display: none;
 	}
 
 	.content {
