@@ -1,247 +1,37 @@
 body {
-	text-align: center;
-	font-family: 'Quicksand', sans-serif;
-	margin-top: 0px;
-	margin-bottom: 50px;
+    margin: 0;
+    background-color: #ff7488;
+    font-family: 'Quicksand', sans-serif;
 }
 
-a {
-	color: #000;
+.container {
+    min-height: 100vh;
 }
 
-li {
-	margin-top: 10px;
-	margin-bottom: 10px;
+.logo-container {    
+    margin: auto;  
+    height: calc(100vh - 60px);
+    width: 920px;
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    display: block;
+    width: 100%;
+    transition: all .3s ease-in-out;
 }
 
-.m50 {
-	margin-top: 50px
+.logo:hover { transform: scale(1.05); }
+
+.archive {
+   text-align: center;
+   color: #0000ff;
+   font-size: 0.8rem;
 }
 
-.emph {
-	color: limegreen;
+a, a:visited {
+    color: #0000ff;
 }
 
-.emph a {
-	color: limegreen;
-}
-
-.nav {
-	padding: 20px;
-	position: sticky;
-	top: 100px;
-	width: 30%;
-	z-index: 10;
-}
-
-.kanalk {
-	position: absolute;
-	top: 40px;
-	right: 40px;
-}
-
-
-.kanalk p {
-	background-color: black;
-	color: white;
-	min-width: 240px;
-}
-
-.kanalk a {
-	color: white;
-	text-decoration: none;
-}
-
-.kanalk a:hover {
-	color: limegreen;
-}
-
-.kanalk img {
-	width: 100px;
-}
-
-.content {
-	margin-top: -20px;
-}
-
-
-.navItem {
-	background-color: black;
-	/* min-width: 320px; */
-	width: 320px;
-	margin-bottom: 20px;
-	transform: rotate(-30deg);
-}
-
-.secondItem {
-	transform: rotate(-30deg) translate(30px)
-}
-
-.navItem a {
-	color: white;
-	text-decoration: none;
-	font-size: 1.2em;
-}
-
-.navItem a:hover {
-	color: limegreen;
-}
-
-#logo {
-	max-width: 30vw;
-	margin-top: 30px;
-	transition: all .7s ease-in-out;
-}
-
-#logo:hover { transform: scale(1.05); }
-
-.moto {
-	margin-top: 50px;
-}
-
-.moto p {
-	line-height: 0.6;
-}
-
-.news {
-	max-width: 600px;
-	margin: auto;
-}
-
-.socials {
-	display: flex;
-	justify-content: center;
-}
-
-.socials img {
-	height: 30px;
-	padding: 10px;
-	transition: all .3s ease-in-out;
-}
-
-.socials img:hover { transform: scale(1.1); }
-
-
-section {
-	max-width: 80%;
-	/* margin: auto; */
-	margin-left: 30%;
-	text-align: left;
-}
-
-section h2 {
-	text-align: center;
-	padding-top: 80px;
-}
-
-.timeTable {
-	display: flex;
-	font-size: 1.2em;
-}
-
-.timeLabel {
-	width: 200px
-}
-
-.programmItem {
-	display: flex;
-	flex-wrap: wrap;
-	max-width: 800px;
-	margin: auto;
-	text-align: left;
-	padding-top: 40px;
-}
-
-.programmHalf {
-	width: 50%;
-}
-
-.programmHalf img {
-	max-width: 300px;
-	max-height: 300px;
-}
-
-.programmText {
-	width: 50%;
-}
-
-.map {
-	display: flex;
-}
-
-.map img {
-	max-width: 50%;
-}
-
-.legend {
-	max-width: 50%;
-	margin-top: 100px;
-}
-
-.call {
-	margin-top: 50px;
-}
-
-@media screen and (max-width:700px) {
-	.nav {
-		max-width: 100%;
-		top: 20px;
-	}
-
-	.navItem {
-		/* width: 220px; */
-		margin-bottom: 10px;
-		transform: none; 
-	}
-	.navItem a {
-		max-width: 80%;
-		/* font-size: 0.8em; */
-	}
-
-	.kanalk {
-		display: none;
-	}
-
-	.content {
-		margin-top: 100px;
-	}
-
-	#logo {
-		max-width: 80vw;
-	}
-
-	section {
-		margin-left: 10%;
-	}
-
-	section h2 {
-		padding-top: 120px;
-	}
-
-	.timeTable {
-		font-size: 1em;
-		flex-wrap: wrap;
-	} 
-
-
-	.programmHalf, .programmText {
-		width: 100%;
-	}
-
-	.programmHalf img {
-		width: 90%;
-	}
-
-	.map {
-		display: block;
-	}
-
-	.map img {
-		max-width: 90%;
-	}
-
-	.legend {
-		max-width: 100%;
-		margin-top: 10px;
-	}
-}
